@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <h1>WELCOME TO LIBRARY LOGIN</h1>
+    </head>
+    <body>
+        <input type="radio" id="box1" name="grp" value="student" >ADMIN </input>
+        <br>
+        <br>
+        <input type="radio" id="box2" name="grp" value="admin" >STUDENT</input>
+        <br><br>
+        <button onclick="fn1()" id="btn1"> OK</button>
+    </body>
+    <script>
+        function fn1()
+        {
+            var x=document.getElementById("box1");
+            var y=document.getElementById("box2");
+            if(y.checked==true)
+            window.location.href='studentpage.html';
+            else if(x.checked==true)
+            alert("denied access");
+           
+        }
+    </script>
+</html>

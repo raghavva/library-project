@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <h1>SELECT YOUR OPTION</h1>
+    </head>
+    
+       <select id="s1" onchange="selectoption();" >
+           <option value="return book">return book</option>
+           <br>
+           <option value="take book">take book</option>
+           <br>
+           <option value="apply membership">apply membership</option>
+            <br><br>
+            
+
+       </select>
+       <body>
+           <script>
+           function selectoption()
+           {
+               switch(document.getElementById('s1').value)
+               {
+                   case "return book":
+                       {
+                   window.location.href='returnbook.html';
+                   break;
+                       }
+                   case "take book":
+                   window.location.href='takebook.html';
+                   break;
+                   case "apply membership":
+                   window.location.href='membership.html';
+                   break;
+               }
+           }
+        </script>
+       </body>
+</html>

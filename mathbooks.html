@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <h1>select the book</h1>
+    </head>
+    <body>
+        <select id="s3" onchange="fn3()">
+            <option value="1">3rd sem</option>
+            <option value="2">4th sem</option>
+            <option value="3">5th sem</option>
+        </select>
+        <script>
+            function fn3()
+            {
+                var x=document.getElementById("s3");
+                if(x.value==1)
+                alert("3rd sem book is being issued");
+                else if(x.value==2)
+                alert("4th sem book is being issued");
+                else if(x.value==3)
+                alert("5th sem book is being issued");
+            }
+
+            </script>
+    </body>
+</html>

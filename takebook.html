@@ -1,0 +1,45 @@
+
+<html>
+    <head>
+        <h1> select subject   </h1>
+        
+    </head>
+    
+    <select id ="s2" onchange="fn2();">
+        <option value="1">MM</option> 
+        <option value="2">math</option> 
+        <option value="3">fafl</option> 
+        <option value="4">os</option> 
+
+    </select>
+    <body>
+    <script>
+        function fn2()
+        {
+        switch(document.getElementById('s2').value)
+        {
+            case "2":
+                {
+            window.location.href='mathbooks.html';
+            break;
+                }
+            case "1":
+            {
+            window.location.href='mm.html';
+            break;
+            }
+            case "3":
+            {
+            window.location.href='fafl.html';
+            break;
+            }
+            case "4":{
+            window.location.href='os.html';
+            break;
+            }
+        }
+    }
+    </script>
+</body>
+
+</html>

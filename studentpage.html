@@ -1,0 +1,36 @@
+<html>
+    
+        <head>
+            <input id="box1" placeholder=" enter username">
+            <br><br>
+            <input type="password" id="box2" placeholder="enter password">
+            <br>
+            <button onclick="myFunction()" >OK</button>
+        </head>
+    <body>
+        
+            <script>
+       function myFunction() {
+  
+
+                var x=document.getElementById("box1").value;
+                
+                var y=document.getElementById("box2").value;
+               
+                if(x==y)
+                {
+                   
+                alert("login granted");
+                window.location.href='options.html';
+                }
+                else
+                {
+                    
+
+                    alert("incorrect");
+                }
+}
+</script>
+        
+    </body>
+</html>
